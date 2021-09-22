@@ -70,20 +70,20 @@ module "fssdisk01" {
 }
 
 module "lampconfig01" {
-  source     = "git::ssh://git@github.com/oracle-devrel/terraform-oci-cloudbricks-remote-linux-executor.git?ref=v1.0.0"
+  source = "git::ssh://git@github.com/oracle-devrel/terraform-oci-cloudbricks-remote-linux-executor.git?ref=v1.0.0"
   depends_on = [
-                module.instance01,
-                module.fssdisk01
-                ]
-  count      = length(module.instance01.instance.*.id)
+    module.instance01,
+    module.fssdisk01
+  ]
+  count = length(module.instance01.instance.*.id)
   ######################################## ARTIFACT SPECIFIC VARIABLES ######################################
-  ssh_public_key                 = var.lampconfig01_ssh_public_key
-  ssh_private_key                = var.lampconfig01_ssh_private_key
-  ssh_public_is_path             = var.lampconfig01_ssh_public_is_path
-  ssh_private_is_path            = var.lampconfig01_ssh_private_is_path
-  script_name                    = var.lampconfig01_script_name
-  script_args                    = var.lampconfig01_script_args
-  linux_compute_private_ip       = module.instance01.instance[count.index].private_ip
+  ssh_public_key           = var.lampconfig01_ssh_public_key
+  ssh_private_key          = var.lampconfig01_ssh_private_key
+  ssh_public_is_path       = var.lampconfig01_ssh_public_is_path
+  ssh_private_is_path      = var.lampconfig01_ssh_private_is_path
+  script_name              = var.lampconfig01_script_name
+  script_args              = var.lampconfig01_script_args
+  linux_compute_private_ip = module.instance01.instance[count.index].private_ip
   ######################################## ARTIFACT SPECIFIC VARIABLES ######################################
 
 }

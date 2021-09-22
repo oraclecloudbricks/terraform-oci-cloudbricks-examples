@@ -13,17 +13,17 @@ private_key_path = "/home/opc/my_keys/oci_api_key.pem"
 ########## PROVIDER SPECIFIC VARIABLES ##########
 
 ########## ARTIFACT SPECIFIC VARIABLES ##########
-  dataguard01_dg_availability_domain_number = 1
-  dataguard01_network_subnet_name           = "dalquint_hub_pvt_subnet"
-  dataguard01_primary_db_home_display_name  = "TstDBHome"
-  dataguard01_primary_database_name         = "TstDBHome"
-  dataguard01_database_admin_password       = "W3lC0m3_1#"
-  dataguard01_dg_hostname                   = "testdbhost-dg"
-  dataguard01_dg_shape                      = "VM.Standard2.2"
-  dataguard01_dg_display_name               = "TstDBSys-secondary"
-  dataguard01_dg_instance_compartment_name  = "DALQUINT_HUB"
-  dataguard01_dg_network_compartment_name   = "DALQUINT_HUB"
-  dataguard01_protection_mode               = "MAXIMUM_PERFORMANCE"
-  dataguard01_transport_type                = "ASYNC"
+dataguard01_dg_availability_domain_number = 1
+dataguard01_network_subnet_name           = "dalquint_hub_pvt_subnet"
+dataguard01_primary_db_home_display_name  = "TstDBHome"
+dataguard01_primary_database_name         = "TstDBHome"
+dataguard01_database_admin_password       = "W3lC0m3_1#"
+dataguard01_dg_hostname                   = "testdbhost-dg"
+dataguard01_dg_shape                      = "VM.Standard2.2"
+dataguard01_dg_display_name               = "TstDBSys-secondary"
+dataguard01_dg_instance_compartment_name  = "DALQUINT_HUB"
+dataguard01_dg_network_compartment_name   = "DALQUINT_HUB"
+dataguard01_protection_mode               = "MAXIMUM_PERFORMANCE"
+dataguard01_transport_type                = "ASYNC"
 
-  ########## ARTIFACT SPECIFIC VARIABLES ##########
+########## ARTIFACT SPECIFIC VARIABLES ##########
