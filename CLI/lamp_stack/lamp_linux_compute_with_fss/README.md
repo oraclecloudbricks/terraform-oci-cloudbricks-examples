@@ -3,7 +3,7 @@
 [![License: UPL](https://img.shields.io/badge/license-UPL-green)](https://img.shields.io/badge/license-UPL-green) [![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=oracle-devrel_terraform-oci-cloudbricks-examples)](https://sonarcloud.io/dashboard?id=oracle-devrel_terraform-oci-cloudbricks-examples)
 
 ## Introduction
-The following system builds a Sample Compartment Structure reflecting a HUB and SPOKE with the following reference architecture: 
+The following system builds a Sample LAMP Stack Set of Machines
 
 ![ReferenceArchitecture](./images/Bricks_Architectures-LAMP_Stack.jpeg)
 
